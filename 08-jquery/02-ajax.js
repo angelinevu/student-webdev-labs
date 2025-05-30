@@ -9,7 +9,7 @@ const addBookToDOM = (item) => {
       alignItems: "center",
       marginTop: "20px",
     })
-    .append($("<h3>").text(item.name))
+    .append($("<h2>").addClass("fs-3").text(item.name))
     .append($("<p>").text(item.authors[0]))
     .append($("<p>").text(item.released.substring(0, 4)))
     .append($("<p>").text(`${item.numberOfPages} pages`));
